@@ -1,7 +1,7 @@
 # prime
 #include <stdio.h>
 int main() {
-    int n, i, flag = 0;
+    int n, i, fl = 0;
     printf("Enter a positive integer: ");
     scanf("%d", &n);
 
@@ -9,7 +9,7 @@ int main() {
 
         // condition for non-prime
         if (n % i == 0) {
-            flag = 1;
+            fl= 1;
             break;
         }
     }
@@ -18,7 +18,7 @@ int main() {
         printf("1 is neither prime nor composite.");
     }
     else {
-        if (flag == 0)
+        if (fl == 0)
             printf("%d is a prime number.", n);
         else
             printf("%d is not a prime number.", n);
